@@ -30,5 +30,5 @@ output:
     id: relay${relay_unique_id}_output
     pin: 
       number: ${relay_regulator_gate_pin}
-      inverted: true
+      inverted: false
 

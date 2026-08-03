@@ -55,6 +55,7 @@ number:
     max_value: 55
     step: 5
     mode: box
+    initial_value: 30
   - platform: template
     name: "${scheduler_unique_id} Scheduler End Minute"
     id: "${scheduler_unique_id}_scheduler_end_min"
@@ -63,6 +64,7 @@ number:
     max_value: 55
     step: 5
     mode: box
+    initial_value: 30
   - platform: template
     name: "${scheduler_unique_id} Scheduler Begin Hour"
     id: "${scheduler_unique_id}_scheduler_begin_hour"
@@ -71,7 +73,7 @@ number:
     max_value: 23
     step: 1
     mode: box
-    initial_value: 0
+    initial_value: 22
   - platform: template
     name: "${scheduler_unique_id} Scheduler End Hour"
     id: "${scheduler_unique_id}_scheduler_end_hour"
@@ -80,7 +82,7 @@ number:
     max_value: 23
     step: 1
     mode: box
-    initial_value: 2
+    initial_value: 5
 
 time:
   - platform: sntp

@@ -49,8 +49,8 @@ switch:
     id: activate
     on_turn_on:
       then:
+        - light.turn_on: green_led
         - lambda: |-
-            id(green_led).turn_on();
             id(power_meter_activated) = 1;
             id(relay1_tempo_counter).publish_state(id(full_power_duration).state);
             id(relay2_tempo_counter).publish_state(id(full_power_duration).state);

@@ -4,6 +4,7 @@
 
 substitutions:
   relay_unique_id: "" # Allow to have multiple relays for engine_1dimmer_nswitches
+  relay_inverted: "true" # Default as true to respect originial project
 
 script:
   # Apply regulation on relay
@@ -30,5 +31,5 @@ output:
     id: relay${relay_unique_id}_output
     pin: 
       number: ${relay_regulator_gate_pin}
-      inverted: false
+      inverted: ${relay_inverted}
 

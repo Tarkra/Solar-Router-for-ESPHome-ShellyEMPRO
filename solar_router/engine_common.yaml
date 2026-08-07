@@ -91,7 +91,8 @@ light:
     platform: binary
     output: yellow_led_output
     internal: ${hide_leds}
-    brightness: 20%
+    initial_state:
+      brightness: 20%
     effects:
       - strobe:
           name: blink
